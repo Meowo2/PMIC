@@ -1,0 +1,16 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+
+    background-image: url(imagens/fundo.png);  
+}
+
+#fundo2{
+    background-image: url(imagens/fundo2.png);
+}
+
+.link{
+    /* float: right */
+    padding-right: 50px;
+}
