@@ -1,16 +1,45 @@
 body{
-    padding: 0;
+    padding:1%;
     margin: 0 auto;
-    width: 80%;
-
-    background-image: url(imagens/fundo.png);  
+    width: 80%;  
 }
 
-#fundo2{
+#fundo1{
+	background-image: url(imagens/fundo.png);
+}
+
+.fundo2{
     background-image: url(imagens/fundo2.png);
 }
 
+.menu{
+	padding-bottom: 20px;
+}
+
 .link{
-    /* float: right */
-    padding-right: 50px;
+    float: right;
+	padding-top: 25px;
+}
+
+img{
+	float: ;
+}
+
+#imagem{
+	padding-top: 5px;
+	padding-left: 20%;
+}
+
+.rodape{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.input{
+	width: 200px;
+}
+
+#descr{
+	width: 200px;
+	height: 60px;
 }
