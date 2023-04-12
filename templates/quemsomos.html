@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body class="fundo2">
+{% extends "base.html" %}
 
+{% block bg %}
 
-    <!-- Menu -->
-    <div class="menu">
-        <img src="imagens/logo.png" alt="logo">
+<body id="fundo2">
+        
+{% endblock %}
 
-        <div class="link">
-            <a href="index.html">Home</a>|
-            <a href="quemsomos.html">Quem Somos</a>|
-            <a href="contatos.html">Contatos</a>
-        </div>
+{% block content %}
 
-    </div>
-	
-	
 	<!-- Quem Somos -->
 	<div>
         <h1>Quem Somos</h1>
@@ -56,13 +41,5 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quidem harum distinctio eaque aliquam! Dolorum voluptate deserunt minima error nulla eum, dicta ducimus veritatis ipsum alias ea similique sint repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non expedita quos id alias incidunt, asperiores hic necessitatibus sequi libero laboriosam placeat! Placeat, quo esse veniam nesciunt aliquid fugiat magnam dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quidem harum distinctio eaque aliquam! Dolorum voluptate deserunt minima error nulla eum, dicta ducimus veritatis ipsum alias ea similique sint repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non expedita quos id alias incidunt, asperiores hic necessitatibus sequi libero laboriosam placeat! Placeat, quo esse veniam nesciunt aliquid fugiat magnam dolorem.</p>
         
     </div>
-	
-	
-	<!-- Rodapé -->
-    <div class="rodape">
-        <h4>Todos os direitos reservados</h4>
-    </div>
-	
-	
-</body>
-</html>
+    
+{% endblock %}

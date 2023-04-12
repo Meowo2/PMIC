@@ -5,11 +5,11 @@ body{
 }
 
 #fundo1{
-	background-image: url(imagens/fundo.png);
+	background-image: url(../imagens/fundo.png);
 }
 
 .fundo2{
-    background-image: url(imagens/fundo2.png);
+    background-image: url(../imagens/fundo2.png);
 }
 
 .menu{
