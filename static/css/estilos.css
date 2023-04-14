@@ -1,6 +1,5 @@
 body{
-    padding:1%;
-    margin: 0 auto; 
+    margin: 18px 15%;
 }
 
 #fundo1{
@@ -12,26 +11,33 @@ body{
 }
 
 .menu{
-	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.link{
-    float: right;
-	padding-top: 25px;
+.menu > div{
+	line-height: 48px;
+	align-items: center;
 }
 
-img{
-	float: ;
+.img{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 }
 
-#imagem{
-	padding-top: 5px;
-	padding-left: 20%;
+.img > div{
+	align-items: center;
 }
 
 .rodape{
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	padding-top: 20px;
+}
+
+.rodape > div{
+	text-align: center;
 }
 
 .input{
