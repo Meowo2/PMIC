@@ -17,18 +17,26 @@
 
 
 <hr>
-<!-- email assunto -->
-<p>Seu e-mail:</p>
-<input class="input">
 
-<p>Assunto:</p>
-<input class="input">
+<!--    Metodo de 'colocar na dataBase'    'função para executar' -->
+<form       method="post"                      action="/contatos">
 
-<!-- descricao botao -->
+    <!-- email assunto -->
+    <p>Seu e-mail:</p>
+    <!--              tipo de conteudo  nome da "variavel"  obriga a ser prenchido -->
+    <input class="input" type="email"      name="email"          required>
 
-<p>Descrição:</p>
-<input type="text" id="descr">
-<br>
-<button>Enviar</button>
+    <p>Assunto:</p>
+    <input class="input" type="text" name="assunto" required>
+
+    <!-- descricao botao -->
+
+    <p>Descrição:</p>
+    <input type="text" id="descr" type="text" name="descricao" required>
+    <br>
+    <input type="submit">
+    <!-- <button>Enviar</button> -->
+
+</form>
     
 {% endblock %}
