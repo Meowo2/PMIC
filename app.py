@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 app.config['MYSQL_Host'] = 'localhost' # 127.0.0.1
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'fatec'
+app.config['MYSQL_PASSWORD'] = '1234'
 app.config['MYSQL_DB'] = 'contatos'
 
 mysql = MySQL(app)
@@ -33,6 +33,19 @@ def contatos():
         cur.close() #Desconecta da Base de Dados
         return 'Concluido'
     return render_template('contatos.html')
+
+
+@app.route('/user')
+def user():
+    cur = mysql.connection.cursor()
+
+    conta = cur.execute('select * from contatos')
+
+    if conta > 0:
+
+        userdata = cur.fetchall()
+
+        return render_template('user.html', userdata = userdata)
 
 @app.route('/quemsomos')
 def quemsomos():
